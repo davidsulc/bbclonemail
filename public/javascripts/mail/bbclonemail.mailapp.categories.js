@@ -20,7 +20,7 @@ BBCloneMail.MailApp.Categories = (function(BBCloneMail, Backbone, $){
   // The category model and collection
   var Category = Backbone.Model.extend({});
   var CategoryCollection = Backbone.Collection.extend({
-    url: "/categories",
+    url: "/email_categories",
     model: Category
   });
 

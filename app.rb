@@ -16,15 +16,15 @@ get "/contacts" do
   return get_contacts.to_json
 end
 
-get "/categories" do
-  return get_categories.to_json
+get "/email_categories" do
+  return get_email_categories.to_json
 end
 
 get "/contact_categories" do
   return get_contact_categories.to_json
 end
 
-def get_categories
+def get_email_categories
   [
     {name: "Work Related"},
     {name: "Personal"}, 
