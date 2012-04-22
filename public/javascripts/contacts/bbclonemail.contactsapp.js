@@ -33,7 +33,7 @@ BBCloneMail.ContactsApp = (function(BBCloneMail, Backbone){
   // Show the contact list and the categories.
   Contacts.showContactList = function(){
     BBCloneMail.ContactsApp.ContactList.show(Contacts.contacts);
-    BBCloneMail.ContactsApp.Categories.show();
+    BBCloneMail.ContactsApp.Categories.showCategoryList();
     BBCloneMail.vent.trigger("contacts:show");
   };
 
