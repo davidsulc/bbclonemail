@@ -30,13 +30,19 @@ BBCloneMail.Routing.ContactsRouting = (function(BBCloneMail, Backbone){
   // those objects do the real work.
   ContactsRouting.Router = Backbone.Marionette.AppRouter.extend({
     appRoutes: {
-      "contacts": "showContactList"
+      "contacts": "showContactList",
+      "contacts/categories/:category": "showCategory"
     }
   });
 
   // Show route for the contacts app
   BBCloneMail.vent.bind("contacts:show", function(){
     BBCloneMail.Routing.showRoute("contacts");
+  });
+
+  // Show route for contact category that is being displayed.
+  BBCloneMail.vent.bind("contacts:category:show", function(category){
+    BBCloneMail.Routing.showRoute("contacts", "categories", category);
   });
 
   // Initialization

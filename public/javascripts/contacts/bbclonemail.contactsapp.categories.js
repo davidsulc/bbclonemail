@@ -38,6 +38,12 @@ BBCloneMail.ContactsApp.Categories = (function(BBCloneMail, Backbone){
 
     categoryClicked: function(e){
       e.preventDefault();
+      var category = $(e.currentTarget).data("category");
+      if (category){
+        BBCloneMail.vent.trigger("contacts:category:show", category);
+      } else {
+        BBCloneMail.vent.trigger("contacts:show");
+      }
     }
   });
 
