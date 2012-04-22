@@ -61,13 +61,14 @@ BBCloneMail.ContactsApp = (function(BBCloneMail, Backbone){
   Contacts.showContactList = function(){
     BBCloneMail.ContactsApp.ContactList.show(Contacts.contacts);
     BBCloneMail.ContactsApp.Categories.showCategoryList();
-    BBCloneMail.vent.trigger("contacts:show");
+    BBCloneMail.vent.trigger("contacts:displayed");
   };
 
   // Show a list of contacts for the given category.
   Contacts.showCategory = function(category){
     showFilteredContactsList(category);
     BBCloneMail.ContactsApp.Categories.showCategoryList();
+    BBCloneMail.vent.trigger("contacts:displayed");
   };
 
   // Contacts App Event Handlers

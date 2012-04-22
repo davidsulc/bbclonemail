@@ -56,7 +56,7 @@
 
       // When the contacts app is shown, be sure we are displaying 
       // "Contacts" in the app selector.
-      BBCloneMail.vent.bind("contacts:show", function(){
+      BBCloneMail.vent.bind("contacts:displayed", function(){
         that.setSelection("contacts");
       });
     }
