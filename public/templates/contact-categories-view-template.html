@@ -1,17 +1,13 @@
 <script id='contact-categories-view-template' type='text/x-jquery-tmpl'>
   <p>Contact Categories</p>
-  <ul>
+  <ul class='customCategories'>
     <li>
-      <a>Everyone</a>
+      <a href="#contacts">Everyone</a>
     </li>
+    {{each items}}
     <li>
-      <a>Friends</a>
+      <a href="#contacts/categories/${$value.name}" data-category="${$value.name}">${$value.name}</a>
     </li>
-    <li>
-      <a>Family</a>
-    </li>
-    <li>
-      <a>Coworkers</a>
-    </li>
+    {{/each}}
   </ul>
 </script>

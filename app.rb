@@ -20,12 +20,24 @@ get "/categories" do
   return get_categories.to_json
 end
 
+get "/contact_categories" do
+  return get_contact_categories.to_json
+end
+
 def get_categories
   [
     {name: "Work Related"},
     {name: "Personal"}, 
     {name: "Important"}, 
     {name: "Read Later"}
+  ]
+end
+
+def get_contact_categories
+  [
+    {name: "Friends"},
+    {name: "Family"},
+    {name: "Coworkers"}
   ]
 end
 
