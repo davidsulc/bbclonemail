@@ -47,37 +47,43 @@ def get_contacts
       id: "09vsjk3209svdjh",
       name: "Joe Johnson",
       email: "joe.johnson@example.com",
-      phone: "555-555-5555"
+      phone: "555-555-5555",
+      categories: ["Friends"]
     },
     {
       id: "45890bdhj4590gf",
       name: "Jim Jimson",
       email: "jim.jimson@example.com",
-      phone: "555-555-5556"
+      phone: "555-555-5556",
+      categories: ["Friends", "Family"]
     },
     {
       id: "120985h4509vfh4",
       name: "Ben Benson",
       email: "ben.benson@example.com",
-      phone: "555-555-5557"
+      phone: "555-555-5557",
+      categories: ["Family"]
     },
     {
       id: "9sd9123njkdas90",
       name: "Bob Robertson",
       email: "robert.robertson@example.com",
-      phone: "555-555-5558"
+      phone: "555-555-5558",
+      categories: ["Friends"]
     },
     {
       id: "lj32kjsd09xzcv3",
       name: "Amy Amerson",
       email: "amy.amerson@example.com",
-      phone: "555-555-5559"
+      phone: "555-555-5559",
+      categories: ["Coworkers"]
     },
     {
       id: "aa23j45hn45n536",
       name: "Julie Julerson",
       email: "julie.julerson@example.com",
-      phone: "555-555-5560"
+      phone: "555-555-5560",
+      categories: []
     }
   ]
 end
